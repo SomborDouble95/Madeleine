@@ -232,6 +232,7 @@ div[class ^= "section"]{
     .section1 > p, .section2 > p{
         font-size: 1rem;
         letter-spacing: 1px;
+        word-spacing: 3px;
     }
 
     .section2 > h2{
