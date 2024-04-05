@@ -226,6 +226,10 @@ div[class ^= "section"]{
         height: 150px;
     }
 
+    .section{
+      margin-bottom: 50px;
+    }
+
     .section1 > p, .section2 > p{
         font-size: 1rem;
         letter-spacing: 0px;
