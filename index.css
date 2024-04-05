@@ -229,7 +229,8 @@ div[class ^= "section"]{
     .section1 > p, .section2 > p{
         font-size: 1rem;
         letter-spacing: 0px;
-        word-spacing: -1px;
+        word-spacing: 0px;
+        text-align: start;
     }
 
     .section2 > h2{
