@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Newsreader:opsz,wght@6..72,800&family=Poppins:wght@300;500;700;900&family=Quicksand&family=Sofia&family=Ubuntu&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background{
+    background: url('https://scitechdaily.com/images/DNA-Genetics.gif');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1000;
+    background-size: cover;
+    opacity: 1;
+}
+
+
+
+
+.name > h3 {
+    position: relative;
+    font-family: Newsreader, sans-serif;
+    text-transform: uppercase;
+    font-size: clamp( 2rem, 1.6rem + 2vw, 4rem );
+    word-spacing: 15px;
+    overflow: hidden;
+    background: linear-gradient(90deg, floralwhite 0%, white, floralwhite 60%);
+    background-size: 150%; 
+    letter-spacing: 8px;
+    /* Gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animate 5s linear infinite;
+    text-align: center;
+  }
+
+  .name h5{
+    font-family: 'Varela Round', sans-serif;
+    font-size: clamp( 1rem, 1.6rem + 2vw, 1.75rem );
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 300;
+    text-align: center;
+    background: linear-gradient(90deg, floralwhite 0%, white, floralwhite 60%);
+    background-size: 250%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animate 15s linear infinite;
+  }
+
+    @keyframes animate {
+        0% {
+        background-position: -500%;
+        }
+        100% {
+        background-position: 500%;
+        }
+    }
+  
+.intro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:60px;
+}
+
+  
+
+#app {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  #app {
+    overflow: hidden;
+    touch-action: pan-up;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #app h1 {
+    font-size: clamp( 2rem, 1.6rem + 2vw, 4rem );
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+  }
+  
+  #app a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #app canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  #hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  #hero h1{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0%;
+    border: 2px solid white;
+    border-right: 0px;
+    border-left: 0px;
+    user-select: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.297);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero h1:hover{
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(205, 205, 205)
+  }
+
+
+.content{
+    background: rgba(255, 192, 203, 0.583);
+    display: none;
+}
+
+div[class ^= "section"]{
+    width:100vw;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.346);
+    overflow: scroll;
+}
+
+.section1 > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+.section1 > p, .section2 > p{
+    font-size: 1.5rem;
+    color: white;
+    text-align: justify;
+    margin: 20px 0;
+    text-indent: 30px;
+    padding: 20px;
+    line-height: 200%;
+}
+
+.section2 > h2{
+  font-size: clamp( 1rem, 0.3157894736842105rem + 2.1052631578947367vw, 2rem );
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin: 20px 0;
+  text-underline-offset: 15px;
+  text-shadow: 0 2px 4px white;
+  letter-spacing: 2px;
+
+
+}
+
+
+.section2 img{
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px white;
+    margin-top: 50px;
+
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 50px;
+    user-select: none;
+    display: none;
+}
+

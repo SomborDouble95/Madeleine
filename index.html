@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js" integrity="sha512-7xTD1meeGGoAzwZKA0Z8YelV3qAvRltuwACWXpnxtneF7VAMztOTAi3t4laVSaE4Znq4LMPeGUIYWEvKEk5r3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" integrity="sha512-S6SXKUZ11xkCoD/UuhdXG4B4iiCXng+xW2KCx0lgfQqmdqtjqGgm4WChdYIhO1F/CmH21vnkSUvPEgXNgDwkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js" type = "module" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="intro">
+        <div class="name">
+            <h3>Madeleine Oman</h3>
+        </div>
+        <div class="name">
+            <h5>Evolutionary Geneticist, PhD student at University of Toronto</h5>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div id="app">
+            <canvas id="webgl-canvas"></canvas>
+            <div id="hero">
+              <h1>Get to Know Me</h1>
+              <h1>Projects</h1>
+              <h1>CV</h1>
+              <h1>Contact</h1>
+            </div>
+            <div class="content">
+                <div class="section1">
+                    <img src="https://madeleineoman.github.io/home/portrait.jpg" alt="">
+                    <p>I’m a PhD student at the <a href="https://ness.bio/" style = "color:rgb(255, 134, 134);">Ness lab</a> at the <a href="https://www.utm.utoronto.ca/biology/" style = "color:rgb(255, 134, 134);">University of Toronto Mississauga</a>. I am broadly interested in human cancer &amp; aging and use computation approaches to explore how mutation rate varies and plays a role in human health.</p>
+                    <p>Outside of research I’m very passionate about improving the undergraduate learning experience. I hold numerous roles in UTM academic student support programs including as a Senior Program Assistant at the <a href="https://www.utm.utoronto.ca/asc/facilitated-study-groups-fsgs" style = "color:rgb(255, 134, 134);">Facilitated Study Group Program</a> and heading the <a href="https://www.utm.utoronto.ca/language-studies/experiential-learning/imacc" style = "color:rgb(255, 134, 134);">International Mentorship in Academic and Canadian Culture Program</a>.</p>
+                </div>
+                <div class="section2">
+                    <h2>Modelling the evolution and predictors of mutation rate variation</h2>
+                    <p>Mutation introduces the genetic variation that facilitates adaptive evolution, but those mutations can also give rise to diseases such as cancer and age-related illnesses. Although mutation is random, the relative rate of mutation at each position, or mutability, is not uniform across the genome. Variation in mutability has been demonstrated at multiple scales and the rate at which mutations occur can vary from site to site across the genome more than 100-fold. Thus, individual sites and regions across the genome have the potential to participate in evolution and genetic pathologies at varying rates. Investigating how molecular processes and genomic properties predict mutation is an active area of study, and many factors have merged as strong predators of mutation. These factors include molecular processes (e.g. DNA repair), protein associations (e.g. nucleosome occupancy) and genetic sequence (e.g. the CpG effect), with sequence context emerging as one of the strongest predictors. I use models to understand how mutation rate variation evolved and what mechanisms best predict it. Analysing the drivers and patterns of mutability variation can help us understand the mutagenic mechanisms of human disease and the forces that generate the variation available to evolution. This work is currently in progress, stay tuned for updates!</p>
+                    <h2>Mutation equilbrium</h2>
+                    <img src="https://madeleineoman.github.io/home/Sliding_2022_01_10_14_23_16_Finalized_avCodingNonCoding_log10_200000_highres_PosterSMBE.jpg" alt=""><p>The rate of mutations varies >100-fold across the genome, altering the rate of evolution, and susceptibility to genetic diseases. The strongest predictor of mutation rate is the sequence itself, varying 75-fold between trinucleotides. The fact that DNA sequence drives its own mutation rate raises a simple but important prediction; highly mutable sequences will mutate more frequently and eliminate themselves in favor of sequences with lower mutability, leading to a lower equilibrium mutation rate. However, purifying selection constrains changes in mutable sequences, causing higher rates of mutation. We conduct a simulation using real human mutation data to test if 1) DNA evolves to a low equilibrium mutation rate and 2) purifying selection causes a higher equilibrium mutation rate in the genome’s most important regions. We explore how this simple process affects sequence evolution in the genome, and discuss the implications for modeling evolution and susceptibility to DNA damage. Read more in the paper <a href="https://academic.oup.com/gbe/article/14/3/evac032/6537538" style = "color:rgb(255, 134, 134);">here.</a></p>
+                </div>
+                <div class="back">
+                    <i class = "fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
