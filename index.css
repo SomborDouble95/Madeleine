@@ -49,7 +49,6 @@ body{
 
   .name h5{
     font-family: 'Varela Round', sans-serif;
-    font-size: clamp( 1rem, 1.6rem + 2vw, 1.75rem );
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -219,3 +218,31 @@ div[class ^= "section"]{
     display: none;
 }
 
+
+@media screen and (max-width: 768px){
+    .section1 > img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .name > h5{
+
+    }
+
+    .section1 > p, .section2 > p{
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .section2 > h2{
+        font-size: 1.5rem;
+        text-decoration: none;
+        line-height: 200%;
+    }
+
+    .section2 img{
+        width: 100%;
+        height: auto;
+    }
+  
+}

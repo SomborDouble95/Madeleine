@@ -22,7 +22,8 @@ function clampBuilder( minWidthPx, maxWidthPx, minFontSize, maxFontSize ) {
         return `clamp( ${ minFontSize }rem, ${ yAxisIntersection }rem + ${ slope * 100 }vw, ${ maxFontSize }rem )`;
       }
 
-    console.log( clampBuilder( 520, 1280, 1, 2 ) );
+    let headFive = document.querySelector('.name > h5');
+    headFive.style.fontSize = clampBuilder( 320, 1200, 1, 1.75 );
 
     function typewriterEffect(targetElement, speed) {
         const element = document.querySelector(targetElement);
